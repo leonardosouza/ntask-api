@@ -1,25 +1,25 @@
 module.exports = (app) => {
-  const Tasks = app.db.models.Tasks
+  const Users = app.db.models.Users
 
-  app.route('/tasks')
+  app.route('/users')
     .get((req, res) => {
-      Tasks.findAll({})
+      Users.findAll({})
         .then(result => res.json(result))
         .catch(error => {
           res.status(412).json({ msg: error.message })
         })
     })
     .post((req, res) => {
-      Tasks.create(req.body)
+      Users.create(req.body)
         .then(result => res.json(result))
         .catch(error => {
           res.status(412).json({ msg: error.message })
         })
     })
 
-  app.route('/tasks/:id')
+  app.route('/users/:id')
     .get((req, res) => {
-      Tasks.findOne({ where: req.params })
+      Users.findOne({ where: req.params })
         .then(result => {
           if (result) return res.json(result)
           return res.sendStatus(404)
@@ -29,14 +29,14 @@ module.exports = (app) => {
         })
     })
     .put((req, res) => {
-      Tasks.update(req.body, { where: req.params })
+      Users.update(req.body, { where: req.params })
         .then(result => res.sendStatus(204))
         .catch(error => {
           res.status(412).json({ msg: error.message })
         })
     })
     .delete((req, res) => {
-      Tasks.destroy({ where: req.params })
+      Users.destroy({ where: req.params })
         .then(result => res.sendStatus(204))
         .catch(error => {
           res.status(412).json({ msg: error.message })

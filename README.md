@@ -5,3 +5,6 @@
 
 ## 02 - Trabalhando com Banco de Dados Relacional (capítulo 5)
 [aula 02](docs/aula-02.md)
+
+## 03 - Implementando CRUD dos recursos da API (capítulo 6)
+[aula 03](docs/aula-03.md)
