@@ -8,3 +8,6 @@
 
 ## 03 - Implementando CRUD dos recursos da API (capítulo 6)
 [aula 03](docs/aula-03.md)
+
+## 04 - Autenticando usuários na API (capítulo 7)
+[aula 04](docs/aula-04.md)
