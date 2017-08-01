@@ -1,3 +1,11 @@
 module.exports = {
-  "extends": "standard"
+  "extends": "standard",
+  "globals": {
+    "request": true,
+    "expect": true
+  },
+  "env": {
+    "mocha": true,
+    "node": true
+  }
 };
