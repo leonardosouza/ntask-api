@@ -11,3 +11,6 @@
 
 ## 04 - Autenticando usuários na API (capítulo 7)
 [aula 04](docs/aula-04.md)
+
+## 05 - Testando a Aplicação (capítulo 7 e 8)
+[aula 05](docs/aula-05.md)
