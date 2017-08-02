@@ -1,3 +1,4 @@
+import express from 'express'
 import bodyParser from 'body-parser'
 
 module.exports = (app) => {
@@ -10,4 +11,5 @@ module.exports = (app) => {
     if (req.body && req.body.id) delete req.body.id
     next()
   })
+  app.use(express.static('public'))
 }

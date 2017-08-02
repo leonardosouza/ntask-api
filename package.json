@@ -1,14 +1,20 @@
 {
   "name": "ntask-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "API de Gestão de Tarefas",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node index",
+    "api-doc": "apidoc -i routes/ -o public/apidoc",
+    "start": "npm run api-doc && babel-node index",
     "test": "NODE_ENV=test mocha test/**/*.js"
   },
-  "keywords": [],
-  "author": "",
+  "apidoc": {
+    "name": "Documentação - Node Task API",
+    "template": {
+      "forceLanguage": "pt_br"
+    }
+  },
+  "author": "Leonardo Souza",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^1.0.2",
@@ -22,6 +28,7 @@
     "sqlite": "^2.8.0"
   },
   "devDependencies": {
+    "apidoc": "^0.17.6",
     "babel-cli": "^6.24.1",
     "babel-preset-env": "^1.6.0",
     "babel-register": "^6.24.1",
