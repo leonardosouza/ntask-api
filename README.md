@@ -1,16 +1,11 @@
-# Aulas
+# Tópicos do Livro
 
-## 01 - Construindo a API (capítulo 4)
-[aula 01](docs/aula-01.md)
+## [Construindo a API (capítulo 4)](docs/aula-01.md)
 
-## 02 - Trabalhando com Banco de Dados Relacional (capítulo 5)
-[aula 02](docs/aula-02.md)
+## [Trabalhando com Banco de Dados Relacional (capítulo 5)](docs/aula-02.md)
 
-## 03 - Implementando CRUD dos recursos da API (capítulo 6)
-[aula 03](docs/aula-03.md)
+## [Implementando CRUD dos recursos da API (capítulo 6)](docs/aula-03.md)
 
-## 04 - Autenticando usuários na API (capítulo 7)
-[aula 04](docs/aula-04.md)
+## [Autenticando usuários na API (capítulo 7)](docs/aula-04.md)
 
-## 05 - Testando a Aplicação (capítulo 7 e 8)
-[aula 05](docs/aula-05.md)
+## [Testando a Aplicação (capítulos 7, 8, 9)](docs/aula-05.md)
