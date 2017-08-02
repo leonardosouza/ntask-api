@@ -20,7 +20,7 @@ module.exports = (app) => {
     })
 
   app.route('/tasks/:id')
-    // .all(app.auth.authenticate())
+    .all(app.auth.authenticate())
     .get((req, res) => {
       Tasks.findOne({ where: req.params, user_id: req.user.id })
         .then(result => {
