@@ -2,8 +2,7 @@ import jwt from 'jwt-simple'
 
 module.exports = (app) => {
   const cfg = app.libs.config
-  const Users = app.db.models.User
-
+  const Users = app.db.models.Users
   /**
    * @api {post} /token
    * @apiGroup Credencial

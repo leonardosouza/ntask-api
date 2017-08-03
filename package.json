@@ -20,12 +20,15 @@
     "bcrypt": "^1.0.2",
     "body-parser": "^1.17.2",
     "consign": "^0.1.6",
+    "cors": "^2.8.4",
     "express": "^4.15.3",
     "jwt-simple": "^0.5.1",
+    "morgan": "^1.8.2",
     "passport": "^0.3.2",
     "passport-jwt": "^2.2.1",
     "sequelize": "^4.4.2",
-    "sqlite": "^2.8.0"
+    "sqlite": "^2.8.0",
+    "winston": "^2.3.1"
   },
   "devDependencies": {
     "apidoc": "^0.17.6",

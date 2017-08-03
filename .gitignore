@@ -2,3 +2,4 @@ node_modules
 .vscode/*.json
 ntask.sqlite
 public/apidoc
+logs/*.log
