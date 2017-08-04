@@ -6,7 +6,7 @@
   "scripts": {
     "api-doc": "apidoc -i routes/ -o public/apidoc",
     "start": "npm run api-doc && npm run clusters",
-    "clusters": "babel-node clusters",
+    "clusters": "nodemon --exec babel-node clusters",
     "test": "NODE_ENV=test mocha test/**/*.js"
   },
   "apidoc": {
@@ -46,6 +46,7 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
     "mocha": "^3.5.0",
+    "nodemon": "^1.11.0",
     "supertest": "^3.0.0"
   }
 }
